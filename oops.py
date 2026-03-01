@@ -1,5 +1,6 @@
 class employee:
     def __init__(self):
+        print(id(self))
         print("Started executing attributes/data")
         self.id = 456
         self.salary = 70000
@@ -14,8 +15,14 @@ class employee:
 # create an object/instance of the class
 akhilesh = employee()
 print(akhilesh.salary)
+akhilesh.name = "Akhilesh Gupta"
+print(akhilesh.name)
+#print(id(akhilesh))
+
+##veeru = employee()
+#print(id(veeru))
 
 # printing the attributes
-#akhilesh.travel("Hyderabad")
+akhilesh.travel("Hyderabad")
 
 print(type(akhilesh))
